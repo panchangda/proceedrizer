@@ -242,7 +242,7 @@ int main(int argc, char **argv)
     if(argc == 2)
         model = new Model(argv[1]);
     else 
-        model = new Model("Resources/african_head.obj");
+        model = new Model("../assets/african_head.obj");
 
     TGAImage framebuffer(width, height, TGAImage::RGB);
     TGAImage depthmap(width, height, TGAImage::GRAYSCALE);
