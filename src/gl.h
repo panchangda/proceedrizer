@@ -15,7 +15,14 @@ struct IShader{
     virtual bool fragment(Vec3f bar, TGAColor &color) = 0;
 };
 
+typedef struct {
+    int width, height;
+    unsigned char* color_buffer;
+    float* depth_buffer;
+} framebuffer_t;
+
 void triangle(Vec4f *pts, IShader &shader, TGAImage &image, float *zbuffer);
+
 
 #endif //__GL_H__
 
